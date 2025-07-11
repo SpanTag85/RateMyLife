@@ -1,14 +1,13 @@
 import type { Configuration } from "@azure/msal-browser";
 import { LogLevel } from "@azure/msal-browser";
 
-// MSAL configuration for Azure AD B2C
+// MSAL configuration for Azure AD
 export const msalConfig: Configuration = {
   auth: {
-    clientId: import.meta.env.VITE_AZURE_CLIENT_ID || "your-client-id-here",
+    clientId: import.meta.env.VITE_AZURE_CLIENT_ID || "3b161d9c-1850-4c06-85af-06247ff4465b",
     authority: import.meta.env.VITE_AZURE_AUTHORITY || "https://login.microsoftonline.com/common",
     redirectUri: import.meta.env.VITE_REDIRECT_URI || window.location.origin,
     postLogoutRedirectUri: import.meta.env.VITE_POST_LOGOUT_REDIRECT_URI || window.location.origin,
-    knownAuthorities: ["ratemylife.b2clogin.com"], // Add your B2C domain here
   },
   cache: {
     cacheLocation: "localStorage",

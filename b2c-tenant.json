@@ -1,0 +1,13 @@
+{
+  "location": "Europe",
+  "properties": {
+    "createTenantProperties": {
+      "countryCode": "NO",
+      "displayName": "RateMyLife"
+    }
+  },
+  "sku": {
+    "name": "Standard",
+    "tier": "A0"
+  }
+}
